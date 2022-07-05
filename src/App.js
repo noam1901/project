@@ -91,6 +91,9 @@ function App() {
     <Card.Text>
     Bacon ipsum dolor amet ham hock venison corned beef swine alcatra tail flank, sirloin short loin tenderloin pancetta burgdoggen. Swine sirloin chislic beef strip steak tri-tip meatball kielbasa spare ribs. Biltong swine tri-tip drumstick. Capicola biltong pancetta landjaeger kevin ribeye tongue, picanha chuck. Landjaeger spare ribs jowl pork belly flank. Alcatra drumstick kevin tongue. Pork loin cupim corned beef drumstick pork filet mignon tri-tip. Turkey kielbasa strip steak, ground round jerky pork loin frankfurter ball tip pork chop short ribs brisket ham meatball. Doner bresaola beef ham tail ball tip cupim alcatra. Tail picanha ground round sirloin strip steak. Shoulder chislic brisket jowl spare ribs turducken. Prosciutto ball tip frankfurter sausage sirloin ham kielbasa jerky shankle bacon. Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
     </Card.Text>
+    <Card.Text>
+      Price: 200 NIS
+    </Card.Text>
     <div className='inputs'>
       <Form.Group>
         <Form.Label>Quantity:</Form.Label>
