@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
 .d-block{
   height: 40rem;
 }
@@ -27,4 +21,7 @@
 }
 .card-text {
   text-align: left;
+}
+.btnItem {
+  width: 33%;
 }
