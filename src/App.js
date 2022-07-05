@@ -87,12 +87,31 @@ function App() {
 <Card style={{ width: '100%', display: 'flex' }}>
 
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+    <Card.Title>Magevet</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+    Bacon ipsum dolor amet ham hock venison corned beef swine alcatra tail flank, sirloin short loin tenderloin pancetta burgdoggen. Swine sirloin chislic beef strip steak tri-tip meatball kielbasa spare ribs. Biltong swine tri-tip drumstick. Capicola biltong pancetta landjaeger kevin ribeye tongue, picanha chuck. Landjaeger spare ribs jowl pork belly flank. Alcatra drumstick kevin tongue. Pork loin cupim corned beef drumstick pork filet mignon tri-tip. Turkey kielbasa strip steak, ground round jerky pork loin frankfurter ball tip pork chop short ribs brisket ham meatball. Doner bresaola beef ham tail ball tip cupim alcatra. Tail picanha ground round sirloin strip steak. Shoulder chislic brisket jowl spare ribs turducken. Prosciutto ball tip frankfurter sausage sirloin ham kielbasa jerky shankle bacon. Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <div className='inputs'>
+      <Form.Group>
+        <Form.Label>Quantity:</Form.Label>
+        <Form.Control type="number" placeholder="Enter email" defaultValue={0} min="0" />
+      </Form.Group>
+    <Form.Group className="mb-3">
+    <Form.Label>color:</Form.Label>
+    <Form.Select>
+      <option>Choose color...</option>
+      <option>White</option>
+      <option>Black</option>
+      <option>Casspi</option>
+    </Form.Select>
+  </Form.Group>
+    </div>
+    <div className='btns'>
+      <Button variant="success">Buy Now</Button>
+      <Button variant="warning">Add To Cart</Button>
+      <Button variant="light">Add To Wishlist</Button>
+    </div>
+    
   </Card.Body>
 </Card>
 </div>
