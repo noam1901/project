@@ -39,3 +39,14 @@
 .d-block{
   height: 40rem;
 }
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs div {
+  width: 50%;
+}
