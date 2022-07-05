@@ -50,3 +50,9 @@
 .inputs div {
   width: 50%;
 }
+.card-title {
+  display: flex;
+}
+.card-text {
+  text-align: left;
+}
