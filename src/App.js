@@ -110,9 +110,9 @@ function App() {
   </Form.Group>
     </div>
     <div className='btns'>
-      <Button variant="success">Buy Now</Button>
-      <Button variant="warning">Add To Cart</Button>
-      <Button variant="light">Add To Wishlist</Button>
+      <Button variant="success" className='btnItem'>Buy Now</Button>
+      <Button variant="warning" className='btnItem'>Add To Cart</Button>
+      <Button variant="light" className='btnItem'>Add To Wishlist</Button>
     </div>
     
   </Card.Body>
