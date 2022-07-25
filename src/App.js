@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Nav2></Nav2>
       <div className='main-content'>
-        <ForgotPassword></ForgotPassword>
-        {/* <SingleProduct></SingleProduct> */}
+        {/* <ForgotPassword></ForgotPassword> */}
+        <SingleProduct></SingleProduct>
         {/* <Login></Login> */}
         {/* <Register></Register> */}
       </div>

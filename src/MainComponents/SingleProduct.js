@@ -1,10 +1,22 @@
 import React from "react";
 import {Carousel , Form, Button, Card} from 'react-bootstrap'
+import {FaStar} from 'react-icons/fa'
 
 function SingleProduct(){
+  const product = {
+    id: 5,
+    name: 'Magevet',
+    imgs: ["https://www.alexandertowels.com/wp-content/uploads/2017/10/white_superhyderL2.jpg","https://www.alexandertowels.com/wp-content/uploads/2017/10/white_superhyderL.jpg","https://res.cloudinary.com/shufersal/image/upload/f_auto,q_auto/v1551800922/prod/product_images/products_zoom/NDB52_Z_P_7297479000034_1.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-gxINEXhf8PlIWJT0028b9kHAjEP2Q92OQ&usqp=CAU"],
+    description: 'very very very VERY good magevet!!!',
+    price: 39.99,
+    inStock: 9,
+    discount: 0,
+    rating: 3.6
+  }
     return (
       <>
      <div className='for-media'>
+      <div className="single-card">
 <Carousel>
   <Carousel.Item>
     <img
@@ -51,7 +63,7 @@ function SingleProduct(){
   <Card.Body>
     <Card.Title>Magevet</Card.Title>
     <Card.Text>
-    Bacon ipsum dolor amet ham hock venison corned beef swine alcatra tail flank, sirloin short loin tenderloin pancetta burgdoggen. Swine sirloin chislic beef strip steak tri-tip meatball kielbasa spare ribs. Biltong swine tri-tip drumstick. Capicola biltong pancetta landjaeger kevin ribeye tongue, picanha chuck. Landjaeger spare ribs jowl pork belly flank. Alcatra drumstick kevin tongue. Pork loin cupim corned beef drumstick pork filet mignon tri-tip. Turkey kielbasa strip steak, ground round jerky pork loin frankfurter ball tip pork chop short ribs brisket ham meatball. Doner bresaola beef ham tail ball tip cupim alcatra. Tail picanha ground round sirloin strip steak. Shoulder chislic brisket jowl spare ribs turducken. Prosciutto ball tip frankfurter sausage sirloin ham kielbasa jerky shankle bacon. Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+        fdsfs
     </Card.Text>
     <Card.Text>
       Price: 200 NIS
@@ -59,7 +71,7 @@ function SingleProduct(){
     <div className='inputs'>
       <Form.Group>
         <Form.Label>Quantity:</Form.Label>
-        <Form.Control type="number" placeholder="Enter email" defaultValue={0} min="0" />
+        <Form.Control type="number" placeholder="Enter Quantity" defaultValue={0} min="0" />
       </Form.Group>
     <Form.Group className="mb-3">
     <Form.Label>color:</Form.Label>
@@ -79,13 +91,23 @@ function SingleProduct(){
     
   </Card.Body>
 </Card>
-<div>
+</div>
+<div className="info-card">
 <Card border="primary" style={{ width: '18rem' }}>
-        <Card.Header>About</Card.Header>
+        <Card.Header>רייטינג</Card.Header>
         <Card.Body>
-          <Card.Title>STARS</Card.Title>
+          <Card.Title><p className="star"><FaStar></FaStar> STARS</p></Card.Title>
           <Card.Text>
-            REVEIES
+            כוכבים
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card border="primary" style={{ width: '18rem' }}>
+        <Card.Header>ביקורות</Card.Header>
+        <Card.Body>
+          <Card.Title>ביקורת</Card.Title>
+          <Card.Text>
+            תוכן ביקורת
           </Card.Text>
         </Card.Body>
       </Card>

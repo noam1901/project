@@ -1,3 +1,6 @@
+body {
+  background-image: url('https://t3.ftcdn.net/jpg/03/23/88/08/360_F_323880864_TPsH5ropjEBo1ViILJmcFHJqsBzorxUB.jpg');
+}
 .App {
   display: flex;
   justify-content: center;
@@ -73,6 +76,7 @@ footer {
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: nowrap;
 
 }
 .header__pages__content {
@@ -101,7 +105,9 @@ footer {
   justify-content: center;
 }
 .for-media{
-  width: 95%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .input-container {
   display: flex;
@@ -114,4 +120,33 @@ footer {
 }
 .select-input {
   width: 100%;
+}
+.star {
+  color: yellow;
+}
+.single-card {
+  display: flex;
+  padding: 4rem;
+}
+.carousel-inner {
+  height: 20rem;
+  width: 100%;
+}
+@media (max-width:710px){
+  .single-card{
+    flex-direction: column;
+  }
+  .carousel-inner{
+    width: 100%;
+  }
+}
+@media (max-width:520px){
+  .single-card {
+    padding: 0;
+  }
+}
+.info-card {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
