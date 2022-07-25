@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import Input from "../ToolsComponents/Input";
 import Form from "../ToolsComponents/Form";
+import {FaMailBulk, FaPaperclip} from 'react-icons/fa'
 
 
 function Login(){
@@ -18,6 +19,7 @@ function Login(){
                 pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
             },
             errors: [],
+            icon: FaMailBulk,
         },
         password: {
             id: 2,
@@ -30,6 +32,7 @@ function Login(){
                 required: true
             },
             errors: [],
+            icon: FaPaperclip,
         }
     }
     return(
