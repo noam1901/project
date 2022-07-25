@@ -1,5 +1,7 @@
 import React from 'react'
 import Form from '../ToolsComponents/Form'
+import {FaMailBulk} from 'react-icons/fa'
+
 
 export const ForgotPassword = () => {
     const formInputs = {
@@ -15,6 +17,7 @@ export const ForgotPassword = () => {
                 pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
             },
             errors: [],
+            icon: FaMailBulk,
         }}
   return (
     <div className='login-form'>

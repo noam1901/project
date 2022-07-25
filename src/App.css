@@ -103,3 +103,15 @@ footer {
 .for-media{
   width: 95%;
 }
+.input-container {
+  display: flex;
+ 
+  background: gray;
+}
+.icon {
+  padding: 0rem 0.6rem;
+  color: white;
+}
+.select-input {
+  width: 100%;
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import Input from "../ToolsComponents/Input";
 import Form from "../ToolsComponents/Form";
+import {FaMailBulk, FaPaperclip, FaMarsDouble} from 'react-icons/fa'
 
 // Add gender.
 
@@ -19,6 +20,7 @@ function Register(){
                 pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
             },
             errors: [],
+            icon: FaMailBulk,
         },
         password: {
             id: 2,
@@ -31,6 +33,7 @@ function Register(){
                 required: true
             },
             errors: [],
+            icon: FaPaperclip,
         },
         confirm_password: {
             id: 3,
@@ -44,6 +47,7 @@ function Register(){
                 confirm_password: true
             },
             errors: [],
+            icon: FaPaperclip
         },
         gender: {
           id: 4,
@@ -56,6 +60,7 @@ function Register(){
             required: true
           },
           errors: [],
+          icon: FaMarsDouble,
         }
         
     }

@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <Nav2></Nav2>
       <div className='main-content'>
-        {/* <ForgotPassword></ForgotPassword> */}
+        <ForgotPassword></ForgotPassword>
         {/* <SingleProduct></SingleProduct> */}
         {/* <Login></Login> */}
-        <Register></Register>
+        {/* <Register></Register> */}
       </div>
       {/* <HomePage></HomePage> */}
       
