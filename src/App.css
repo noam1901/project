@@ -1,5 +1,6 @@
 body {
   background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+  min-height: 45rem;
 }
 .App {
   display: flex;
@@ -40,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  width: 40rem;
+  max-width: 30rem;
 }
 .single-input input{
   width: 100%;
@@ -182,17 +183,10 @@ footer {
   border-bottom: 1px solid #E44C4C;
  }
  .Cart-Items{
-   background: wheat;
-  margin: auto;
-  width: 90%;
-  height: 30%;
+  background: wheat;
   display: flex;
   justify-content: space-between;
-  align-items: center;
- }
- .image-box{
-  width: 5%;
-  text-align: center;
+  flex-wrap: wrap;
  }
  .about{
   height: 100%;
@@ -254,11 +248,6 @@ footer {
   font-weight: 600;
   color: #E44C4C;
   cursor: pointer;
- }
- .checkout{
-  float: right;
-  margin-right: 5%;
-  width: 28%;
  }
  .total{
   width: 100%;
