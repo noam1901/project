@@ -58,7 +58,7 @@ function SingleProduct(){
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-<Card style={{ width: '100%', display: 'flex' }}>
+<Card style={{ width: '100%', display: 'flex', background: 'gray' }}>
 
   <Card.Body>
     <Card.Title>Magevet</Card.Title>
@@ -93,7 +93,7 @@ function SingleProduct(){
 </Card>
 </div>
 <div className="info-card">
-<Card border="primary" style={{ width: '18rem' }}>
+<Card border="primary" style={{ width: '18rem', background: 'gray' }}>
         <Card.Header>רייטינג</Card.Header>
         <Card.Body>
           <Card.Title><p className="star"><FaStar></FaStar> STARS</p></Card.Title>
@@ -102,7 +102,7 @@ function SingleProduct(){
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card border="primary" style={{ width: '18rem' }}>
+      <Card border="primary" style={{ width: '18rem', background: 'gray' }}>
         <Card.Header>ביקורות</Card.Header>
         <Card.Body>
           <Card.Title>ביקורת</Card.Title>

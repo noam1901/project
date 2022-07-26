@@ -11,7 +11,10 @@ function ProductCard(props){
         <Card.Text>
           {props.description}<br></br>{props.price}<br></br>{!(props.discount === 0)? 'DISCOUNT: '+props.discount + '%': <></>}
         </Card.Text>
-        {props.inStock === 0?<Button variant="danger" disabled>Out Of stock</Button>:<Button variant="success">Buy Now</Button> }
+        <div className="card-btns">        
+        {props.inStock === 0?<Button variant="danger" disabled>Out Of stock</Button>:<><Button variant="success">Buy Now</Button></> }
+        <Button>Add to wishlist</Button>
+      </div>
       </Card.Body>
     </Card>
     )
