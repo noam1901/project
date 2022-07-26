@@ -45,7 +45,7 @@ function HomePage(){
         img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
     }])
     return (
-    <>
+    <div>
     <div>
         <h1>Welcome to my site</h1>
         <p className="homepage-desc">You can actually find nothing here but you can explore, enjoy!</p>
@@ -56,7 +56,7 @@ function HomePage(){
      <div className="products">
         {products.map(product => <ProductCard key={product.id} name={product.name} description={product.description} price={product.price} discount={product.discount} inStock={product.inStock} img={product.img}></ProductCard>)}
      </div>
-     </>
+     </div>
     )
 }
 

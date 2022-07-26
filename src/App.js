@@ -1,4 +1,3 @@
-
 import './App.css';
 import Nav2 from './ToolsComponents/Nav2';
 import Login from './MainComponents/Login';
@@ -7,6 +6,7 @@ import Register from './MainComponents/Register';
 import HomePage from './MainComponents/HomePage';
 import SingleProduct from './MainComponents/SingleProduct';
 import { ForgotPassword } from './MainComponents/ForgotPassword';
+import Cart from './MainComponents/Cart';
 
 function App() {
   return (
@@ -14,12 +14,12 @@ function App() {
       <Nav2></Nav2>
       <div className='main-content'>
         {/* <ForgotPassword></ForgotPassword> */}
-        <SingleProduct></SingleProduct>
+        {/* <SingleProduct></SingleProduct> */}
         {/* <Login></Login> */}
         {/* <Register></Register> */}
       </div>
       {/* <HomePage></HomePage> */}
-      
+      <Cart></Cart>
       <Footer></Footer>
     </div>
   );
