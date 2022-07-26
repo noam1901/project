@@ -12,12 +12,12 @@ function App() {
   return (
     <div className="App">
       <Nav2></Nav2>
-      {/* <ForgotPassword></ForgotPassword> checked */}
-      {/* <SingleProduct></SingleProduct> checked */}
-      {/* <Login></Login> checked */}
-      {/* <Register></Register> checked*/}
+      {/* <ForgotPassword></ForgotPassword> */}
+      {/* <SingleProduct></SingleProduct> */}
+      {/* <Login></Login>  */}
+      {/* <Register></Register>  */}
       {/* <HomePage></HomePage> some work needed */}
-      {/* <Cart></Cart> should remake*/}
+      {/* <Cart></Cart> */}
       <Footer></Footer>
     </div>
   );

@@ -9,11 +9,11 @@ const CartItem = (props) => {
         <div class='about'>
             <h2 class='title'>{props.name}</h2>
             <h3 class='subtitle'>color: {props.color}</h3>
-        </div>
-        <div class='counter'> 
-            <div class='btn'>+</div>
-            <div class='count'>{props.quantity}</div>
-            <div class='btn'>-</div>
+            <div class='counter'> 
+                <div class='btn'>+</div>
+                <div class='count'>{props.quantity}</div>
+                <div class='btn'>-</div>
+            </div>
         </div>
         <div class='prices'>
             <div class='amount'>{props.price*props.quantity}$</div>
