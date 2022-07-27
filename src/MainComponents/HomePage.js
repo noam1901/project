@@ -54,7 +54,7 @@ function HomePage(){
          <h2>Best Sellers</h2>
      </div>
      <div className="products">
-        {products.map(product => <ProductCard key={product.id} name={product.name} description={product.description} price={product.price} discount={product.discount} inStock={product.inStock} img={product.img}></ProductCard>)}
+        {products.map(product => <ProductCard key={product.id} name={product.name} description={product.description} price={product.price} discount={product.discount} inStock={product.inStock} img={product.img} id={product.id}></ProductCard>)}
      </div>
      </div>
     )
