@@ -1,0 +1,8 @@
+{
+    "products" : {
+        "id": 1,
+        "name" : "magevet",
+        "quantuty": 4,
+        "colors": ["red", "blue"]
+    }
+}

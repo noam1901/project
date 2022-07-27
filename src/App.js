@@ -7,19 +7,34 @@ import HomePage from './MainComponents/HomePage';
 import SingleProduct from './MainComponents/SingleProduct';
 import { ForgotPassword } from './MainComponents/ForgotPassword';
 import Cart from './MainComponents/Cart';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Nav2></Nav2>
-      {/* <ForgotPassword></ForgotPassword> */}
-      {/* <SingleProduct></SingleProduct> */}
-      {/* <Login></Login>  */}
-      {/* <Register></Register>  */}
-      {/* <HomePage></HomePage> some work needed */}
-      {/* <Cart></Cart> */}
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav2></Nav2>
+          <Switch>
+            <Route exact path='/'>
+              <HomePage></HomePage>
+            </Route>
+            <Route path='/Cart'>
+              <Cart></Cart>
+            </Route>
+            <Route path='/SingleProduct/:id'>
+              <SingleProduct></SingleProduct>
+            </Route>
+            <Route path='/Register'>
+              <Register></Register>
+            </Route>
+          </Switch>
+        <Footer></Footer>
+      </div>
+    </Router>
   );
 }
 

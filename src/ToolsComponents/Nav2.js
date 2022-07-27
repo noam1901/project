@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link} from 'react-router-dom'
 
 
 const Nav2 = () => {
-  const [logedIn, setLogedIn] = useState(true)
+  const [logedIn, setLogedIn] = useState(false)
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="#home">NoamShop</Navbar.Brand>
+      <Link to="/">NoamShop</Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
@@ -19,10 +19,10 @@ const Nav2 = () => {
         </Nav>
         <Nav>
           {logedIn?<Nav.Link href="#deets">my account</Nav.Link>:<Nav.Link href="#deets">Login</Nav.Link> }
-          {logedIn?<Nav.Link href="#deets">Sign Out</Nav.Link>:<Nav.Link href="#deets">Register</Nav.Link> }
-          <Nav.Link href="#memes">
+          {logedIn?<Nav.Link href="#deets">Sign Out</Nav.Link>:<Link to="/Register">Register</Link> }
+          <Link to="/cart">
             Cart
-          </Nav.Link>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
