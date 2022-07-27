@@ -1,11 +1,36 @@
 import { Button } from "react-bootstrap";
 import Form from "../ToolsComponents/Form";
-import {FaMailBulk, FaPaperclip, FaMarsDouble} from 'react-icons/fa'
+import {FaMailBulk, FaPaperclip, FaMarsDouble, FaPuzzlePiece} from 'react-icons/fa'
 
 function Register(){
-    const formInputs= {
-        email: {
-            id: 1,
+    const formInputs= {firstName: {
+        id: 1,
+        name: 'firstName',
+        label: 'First Name',
+        placeholder: 'First Name',
+        value: '',
+        type: 'text',
+        validations: {
+            required: true
+        },
+        errors: [],
+        icon: FaPuzzlePiece
+    },
+    lastName: {
+        id: 2,
+        name: 'lastName',
+        label: 'Last Name',
+        placeholder: 'Last Name',
+        value: '',
+        type: 'text',
+        validations: {
+            required: true
+        },
+        errors: [],
+        icon: FaPuzzlePiece
+    }
+        ,email: {
+            id: 3,
             name: 'email',
             label: 'Email',
             placeholder: 'Please enter your email',
@@ -19,7 +44,7 @@ function Register(){
             icon: FaMailBulk,
         },
         password: {
-            id: 2,
+            id: 4,
             name: 'password',
             label: 'Password',
             placeholder: "Please enter your password",
@@ -32,7 +57,7 @@ function Register(){
             icon: FaPaperclip,
         },
         confirm_password: {
-            id: 3,
+            id: 5,
             name: 'confirm_password',
             label: 'Confirm Password',
             placeholder: "Please enter your password again",
@@ -46,7 +71,7 @@ function Register(){
             icon: FaPaperclip
         },
         gender: {
-          id: 4,
+          id: 6,
           name: 'gender',
           label: 'Gender',
           value: '',
@@ -61,14 +86,14 @@ function Register(){
         
     }
     return(
-        <form className="login-form">
+        <div className="login-form">
         <Form formInputs={formInputs} title='sign up' onSubmit='Register'></Form>
         <div>
           <br></br>
           <span>Already have a user?</span><br></br>
           <Button>Sign in here</Button>
         </div>
-        </form>
+        </div>
     )
 }
 export default Register

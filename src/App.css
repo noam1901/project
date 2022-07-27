@@ -111,7 +111,7 @@ footer {
 }
 .input-container {
   display: flex;
- 
+  border-radius: 80px;
   background: gray;
 }
 .icon {
