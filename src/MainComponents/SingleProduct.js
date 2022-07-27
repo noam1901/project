@@ -1,6 +1,7 @@
 import React from "react";
 import {Carousel , Form, Button, Card} from 'react-bootstrap'
 import {FaStar} from 'react-icons/fa'
+import {useParams} from 'react-router-dom'
 
 function SingleProduct(){
   const product = {
@@ -13,6 +14,8 @@ function SingleProduct(){
     discount: 0,
     rating: 3.6
   }
+  const {id} = useParams()
+  console.log(id);
     return (
       <>
      <div className='for-media'>

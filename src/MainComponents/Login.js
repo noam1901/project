@@ -34,14 +34,14 @@ function Login(){
         }
     }
     return(
-        <form className="login-form">
+        <div className="login-form">
           <Form title='Login' formInputs={formInputs} onSubmit='Login'></Form>
         <div>
           <br></br>
           <span>New User?</span><br></br>
           <Button>Sign up here</Button>
         </div>
-        </form>
+        </div>
     )
 }
 export default Login
