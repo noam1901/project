@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProductCard from "../ToolsComponents/ProductCard";
 
 function HomePage(){
-    const [products, setProducts] = useState([{
+    const products = [{
         id: 1,
         name: 'magevet',
         description: 'very good magevet',
@@ -43,7 +43,7 @@ function HomePage(){
         discount: 0,
         inStock: 9,
         img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
-    }])
+    }]
     return (
     <div>
     <div>

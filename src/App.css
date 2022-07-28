@@ -286,3 +286,23 @@ footer {
  .cart-img {
   width: 7rem;
  }
+ .products-page {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+ }
+ .sort-nav {
+  padding: 2rem;
+  background: #8EB7EB;
+  flex-wrap: wrap;
+ }
+ @media (max-width:620px){
+  .products-page{
+    flex-direction: column;
+  }
+  .sort-nav{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+ }

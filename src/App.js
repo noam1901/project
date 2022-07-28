@@ -12,6 +12,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Products from './MainComponents/Products';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path='/Login'>
               <Login></Login>
+            </Route>
+            <Route path='/products'>
+              <Products></Products>
             </Route>
           </Switch>
         <Footer></Footer>
