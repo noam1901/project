@@ -23,7 +23,7 @@ const Cart = () => {
             <h3 className='Heading'>Shopping Cart</h3>
             <h5 className='Action'>Remove all</h5>
         </div>
-        {orderDetails.map(order => <CartItem key={order.id} name={order.name} color={order.color} src={order.src} quantity={order.quantity} price={order.price}></CartItem>)}
+        {orderDetails.map(order => <CartItem key={order.id} name={order.name} color={order.color} src={order.src} quantity={order.quantity} price={order.price} id={order.id}></CartItem>)}
         <div class='checkout'>
             <div class='total'>
                 <div>

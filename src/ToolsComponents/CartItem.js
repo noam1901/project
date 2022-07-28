@@ -4,7 +4,9 @@ const CartItem = (props) => {
   return (
     <div class='Cart-Items'>
         <div class='image-box'>
-            <img src={props.src} style={{ height:'120px' }} />
+            <a href={'/SingleProduct/'+props.id}>
+                <img src={props.src} style={{ height:'120px' }} className='cart-img' alt={props.name}/>
+            </a>
         </div>
         <div class='about'>
             <h2 class='title'>{props.name}</h2>
