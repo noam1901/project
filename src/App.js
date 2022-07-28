@@ -13,6 +13,7 @@ import {
   Route
 } from "react-router-dom";
 import Products from './MainComponents/Products';
+import MyAccount from './MainComponents/MyAccount';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path='/products'>
               <Products></Products>
+            </Route>
+            <Route path='/MyAccount/:id'>
+              <MyAccount></MyAccount>
             </Route>
           </Switch>
         <Footer></Footer>

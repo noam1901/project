@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import { Button, Form } from 'react-bootstrap';
 
 const Nav2 = () => {
-  const [logedIn, setLogedIn] = useState(false)
+  const [logedIn, setLogedIn] = useState(true)
   let id = 1 // בנתיים
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

@@ -53,11 +53,11 @@ const Products = () => {
         <div className='sort-nav'>
             sort by:
             <div>
-                 categories:{categories.map((cat)=> <div key={cat.id}><input type='checkbox' value={cat.name}></input>{cat.name}</div>)}
+                 <h5>categories:</h5>{categories.map((cat)=> <div key={cat.id}><input type='checkbox' value={cat.name}></input>{cat.name}</div>)}
                  
             </div><br></br>
-            price:
-            <div>
+            
+            <div><h5>price:</h5>
                 <div>
                 min: <input type="number" defaultValue='10' style={{width: '4rem'}}></input>
                 </div>
