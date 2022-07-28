@@ -160,7 +160,7 @@ footer {
   justify-content: space-around;
 }
 .card {
-  background: wheat;
+  background: lemonchiffon;
 }
 .Header{
   margin: auto;
@@ -183,10 +183,11 @@ footer {
   border-bottom: 1px solid #E44C4C;
  }
  .Cart-Items{
-  background: wheat;
+  background: lemonchiffon;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 2rem;
  }
  .about{
   height: 100%;
@@ -281,4 +282,7 @@ footer {
   font-size: 16px;
   font-weight: 600;
   color: #202020;
+ }
+ .cart-img {
+  width: 7rem;
  }
