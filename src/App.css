@@ -345,3 +345,11 @@ footer {
     
   }
  }
+.side-bar {
+  display: flex;
+}
+.my-account {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem;
+}
