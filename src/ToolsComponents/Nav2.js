@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom'
-
+import { Button, Form } from 'react-bootstrap';
 
 const Nav2 = () => {
   const [logedIn, setLogedIn] = useState(false)
@@ -15,8 +15,7 @@ const Nav2 = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Link to='ProductsPage' className='nav-link'>products</Link>
-          <Link to='/idk' className='nav-link'>Pricing</Link>
+          <Link to='/products' className='nav-link'>products</Link>
         </Nav>
         <Nav>
           {logedIn?<Link to={'/MyAccount/'+id} className='nav-link'>my account</Link>:<Link to='/Login' className='nav-link'>Login</Link> }
@@ -25,6 +24,15 @@ const Nav2 = () => {
             Cart
           </Link>
         </Nav>
+        <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
       </Navbar.Collapse>
     </Container>
   </Navbar>
