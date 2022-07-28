@@ -96,7 +96,7 @@ function SingleProduct(){
 </Card>
 </div>
 <div className="info-card">
-<Card border="primary" style={{ width: '18rem', background: 'gray' }}>
+<Card border="primary" style={{ width: '18rem'}}>
         <Card.Header>רייטינג</Card.Header>
         <Card.Body>
           <Card.Title><p className="star"><FaStar></FaStar> STARS</p></Card.Title>
@@ -105,7 +105,7 @@ function SingleProduct(){
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card border="primary" style={{ width: '18rem', background: 'gray' }}>
+      <Card border="primary" style={{ width: '18rem'}}>
         <Card.Header>ביקורות</Card.Header>
         <Card.Body>
           <Card.Title>ביקורת</Card.Title>
