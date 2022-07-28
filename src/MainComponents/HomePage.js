@@ -35,14 +35,6 @@ function HomePage(){
         discount: 0,
         inStock: 9,
         img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
-    },{
-        id: 5,
-        name: 'KIPA',
-        description: 'very bad KIPA',
-        price: 39.99,
-        discount: 0,
-        inStock: 9,
-        img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
     }]
     return (
     <div>

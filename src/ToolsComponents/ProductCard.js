@@ -1,10 +1,11 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {FaStar} from 'react-icons/fa'
 
 function ProductCard(props){
     return (
-        <Card style={{ width: '14rem' }} >
+        <Card>
           <Card.Body>
         <a href={'/SingleProduct/'+props.id}>
         <Card.Img variant="top" src={props.img} />
@@ -16,6 +17,7 @@ function ProductCard(props){
         <div className="card-btns">        
         {props.inStock === 0?<Button variant="danger" disabled>Out Of stock</Button>:<><Button variant="success">Buy Now</Button></> }
         <Button>Add to wishlist</Button>
+        <div>4<FaStar className="star"></FaStar></div>
       </div>
       </Card.Body>
     </Card>
