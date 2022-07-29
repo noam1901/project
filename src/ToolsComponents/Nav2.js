@@ -18,11 +18,8 @@ const Nav2 = () => {
           <Link to='/products' className='nav-link'>products</Link>
         </Nav>
         <Nav>
-          {logedIn?<Link to={'/MyAccount/'+id} className='nav-link'>my account</Link>:<Link to='/Login' className='nav-link'>Login</Link> }
-          {logedIn?<Link to="/" className='nav-link'>Sign Out</Link>:<Link to="/Register" className='nav-link'>Register</Link> }
-          <Link to="/cart" className='nav-link'>
-            Cart
-          </Link>
+          {logedIn?<Link to={'/MyAccount/'+id} className='nav-link'>My Account</Link>:<Link to='/Login' className='nav-link'>Login</Link> }
+          {logedIn?<Link to="/cart" className='nav-link'>Cart</Link>:<Link to="/Register" className='nav-link'>Register</Link> }
         </Nav>
         <Form className="d-flex">
             <Form.Control
