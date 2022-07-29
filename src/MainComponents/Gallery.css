@@ -1,0 +1,19 @@
+.gallery-item {
+    width: 100%;
+    box-shadow: 1px 1px 7px 1px;
+    border-radius: 20px;
+}
+.product-imgs {
+    display: flex;
+    align-items: center;
+}
+.gallery-arrow {
+    background: white;
+    border-radius: 20px;
+    height: 3.5rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px;
+}
+.gallery-arrow:hover {
+    background: dodgerblue;
+}
