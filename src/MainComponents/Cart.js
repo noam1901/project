@@ -1,5 +1,6 @@
 import React from 'react'
 import CartItem from '../ToolsComponents/CartItem'
+import "./Cart.css"
 
 const Cart = () => {
     const orderDetails = [{

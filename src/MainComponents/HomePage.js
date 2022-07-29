@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProductCard from "../ToolsComponents/ProductCard";
+import "./HomePage.css"
 
 function HomePage(){
     const products = [{
@@ -35,6 +36,22 @@ function HomePage(){
         discount: 0,
         inStock: 9,
         img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
+    },{
+        id: 5,
+        name: 'KIPA',
+        description: 'very good KIPA',
+        price: 39.99,
+        discount: 0,
+        inStock: 9,
+        img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
+    },{
+        id: 6,
+        name: 'KIPA',
+        description: 'very good KIPA',
+        price: 39.99,
+        discount: 0,
+        inStock: 9,
+        img: 'https://m.media-amazon.com/images/I/81NQEAaAjpL._AC_UL1500_.jpg'
     }]
     return (
     <div>
@@ -44,6 +61,13 @@ function HomePage(){
     </div>
      <div className="homepage-title">
          <h2>Best Sellers</h2>
+     </div>
+     <div className="products">
+        {products.map(product => <ProductCard key={product.id} name={product.name} description={product.description} price={product.price} discount={product.discount} inStock={product.inStock} img={product.img} id={product.id}></ProductCard>)}
+     </div>
+     <br></br>
+     <div className="homepage-title">
+         <h2>Best Ratings</h2>
      </div>
      <div className="products">
         {products.map(product => <ProductCard key={product.id} name={product.name} description={product.description} price={product.price} discount={product.discount} inStock={product.inStock} img={product.img} id={product.id}></ProductCard>)}

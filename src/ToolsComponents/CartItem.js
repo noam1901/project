@@ -9,15 +9,15 @@ const CartItem = (props) => {
             </a>
         </div>
         <div class='about'>
-            <h2 class='title'>{props.name}</h2>
+            <h2>{props.name}</h2>
             <h3 class='subtitle'>color: {props.color}</h3>
             <div class='counter'> 
-                <div class='btn'>+</div>
+                <div class='cartitem-btn'>+</div>
                 <div class='count'>{props.quantity}</div>
-                <div class='btn'>-</div>
+                <div class='cartitem-btn'>-</div>
             </div>
         </div>
-        <div class='prices'>
+        <div>
             <div class='amount'>{props.price*props.quantity}$</div>
             <div class='save'>
                 <u>Save for later</u>
