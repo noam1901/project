@@ -1,40 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {Carousel , Form, Button, Card} from 'react-bootstrap'
 import {FaStar} from 'react-icons/fa'
 import {useParams} from 'react-router-dom'
 import Gallery from "./Gallery";
 import './SingleProduct.css'
+import { getProductById, getImagesById } from "../api/dal.js";
 
 function SingleProduct(){
-  const product = {
-    id: 5,
-    name: 'Magevet',
-    imgs: ["https://www.alexandertowels.com/wp-content/uploads/2017/10/white_superhyderL2.jpg","https://www.alexandertowels.com/wp-content/uploads/2017/10/white_superhyderL.jpg","https://res.cloudinary.com/shufersal/image/upload/f_auto,q_auto/v1551800922/prod/product_images/products_zoom/NDB52_Z_P_7297479000034_1.png"],
-    description: 'very very very VERY good magevet!!!',
-    price: 39.99,
-    inStock: 9,
-    discount: 0,
-    rating: 3.6
-  }
-  // product need to get by ID from DB
-  const {id} = useParams()
-  console.log(id);
+  const [product, setProduct] = useState({})
+  const [images, setImages] = useState({})
+  const [loaded, setLoaded] = useState(false)
+  const prodId = useParams()
+  useEffect(()=>{
+    async function getData(){
+        setProduct(await getProductById(prodId.id))
+        setLoaded(true)
+    }
+    getData()
+},[])
     return (
       <>
      <div className='for-media'>
       <div className="single-card">
-<Gallery>
+<Gallery id={prodId.id}>
 
 </Gallery>
-<Card style={{ width: '100%', display: 'flex' }}>
+{loaded && <Card style={{ width: '100%', display: 'flex' }}>
 
   <Card.Body>
-    <Card.Title>{product.name}</Card.Title>
+    <Card.Title>{product[0].productName}</Card.Title>
     <Card.Text>
-    {product.description}
+    {product[0].Description}
     </Card.Text>
     <Card.Text>
-      Price: {product.price}$
+      Price: {product[0].unitPrice}$
     </Card.Text>
     <div className='inputs'>
       <Form.Group>
@@ -58,7 +57,7 @@ function SingleProduct(){
     </div>
     
   </Card.Body>
-</Card>
+</Card>}
 </div>
 <div className="info-card">
 <Card border="primary" style={{ width: '18rem'}}>

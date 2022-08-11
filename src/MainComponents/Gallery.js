@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Gallery.css'
+import { getImagesByProductId } from '../api/dal.js'
 
-const Gallery = () => {
-    const imgs = ['https://play-lh.googleusercontent.com/rn5bGFg6rH_SDdwSBQyA3nfO_hBO6aKHbiS9VpTdrWBIpIHDDF4bOa3xRX2IN-yo0xU','https://play-lh.googleusercontent.com/Bp7N9kWIvEuNwayd-Eza4wTN4jIRgVWNuRz2ppRShY86bz62_-7HgLhxpbREGEjr9hg','https://play-lh.googleusercontent.com/BiF6cWVdRdWOY6V9l5VJckMM-nfgXCmxWdG72MHxYlNlu46RDG-Pk76Wc_Cu8faxnWg' ]
-    const [currentImg, setCurrentImg] = useState(imgs[0])
+const Gallery = (props) => {
+    const [imgs, setImgs] = useState({})
+    const [currentImg, setCurrentImg] = useState('')
+    const [loaded, setLoaded] = useState(false)
+    useEffect(()=>{
+        async function getData(){
+            let images = await getImagesByProductId(props.id)
+            setImgs(images)
+            setCurrentImg(images[0])
+            setLoaded(true)
+        }
+        getData()
+    },[])
+    console.log(__dirname);
     // imgs must come as props
     function arrow(direction){
         let currentIndex = imgs.indexOf(currentImg)
@@ -17,8 +29,8 @@ const Gallery = () => {
   return (
     <div className='product-imgs'>
         <h1 className='gallery-arrow' onClick={()=>arrow('left')}>⇦</h1>
-        <div>
-            <img src={currentImg} className='gallery-item'></img>
+        <div className='gallery-img-holder'>
+            {loaded && <img src={'/imgs/'+currentImg.imgURL+'.jpg'} className='gallery-item'></img>}
         </div>
         <h1 className='gallery-arrow' onClick={arrow}>⇨</h1>
     </div>
