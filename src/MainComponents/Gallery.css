@@ -1,10 +1,13 @@
 .gallery-item {
     width: 100%;
     box-shadow: 1px 1px 7px 1px;
-    border-radius: 20px;
+    border-radius: 20px; 
+    height: 25rem;
 }
 .product-imgs {
     display: flex;
+    width: 100%;
+  
     align-items: center;
 }
 .gallery-arrow {
@@ -16,4 +19,8 @@
 }
 .gallery-arrow:hover {
     background: dodgerblue;
+}
+.gallery-img-holder{
+    width: 100%;
+    
 }
