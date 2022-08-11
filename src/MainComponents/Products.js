@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import ProductCard from '../ToolsComponents/ProductCard'
-import { getProducts } from '../api/dal.js'
+import { getProductsWith1Img } from '../api/dal.js'
 
 const Products = () => {
     const [products, setProducts] = useState([])
     useEffect(()=>{
         async function getData(){
-            setProducts(await getProducts())
+            setProducts(await getProductsWith1Img())
         }
         getData()
     },[])
@@ -34,7 +34,7 @@ const Products = () => {
             <button>SORT</button>
         </div>
         <div className="products">
-            {products.map(product => <ProductCard key={product.productid} name={product.productName} description={product.Description.slice(0,10)+'...'} price={product.unitPrice} discount={product.discount==null?0:product.discount} inStock={product.unitInStock} img={product.img} id={product.productid}></ProductCard>)}
+            {products.map(product => <ProductCard key={product.productid} name={product.productName} description={product.Description.slice(0,10)+'...'} price={product.unitPrice} discount={product.discount==null?0:product.discount} inStock={product.unitInStock} img={product.imgURL} id={product.productid}></ProductCard>)}
         </div>
      
     </div>

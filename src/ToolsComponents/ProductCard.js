@@ -8,7 +8,7 @@ function ProductCard(props){
         <Card>
           <Card.Body>
         <a href={'/SingleProduct/'+props.id}>
-        <Card.Img variant="top" src={props.img} />
+        <Card.Img variant="top" src={"imgs/"+props.img+'.jpg'} />
       
         <Card.Title>{props.name}</Card.Title></a>
         <Card.Text>

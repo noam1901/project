@@ -5,9 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import {Link} from 'react-router-dom'
 import { Button, Form } from 'react-bootstrap';
 
-const Nav2 = () => {
-  const [logedIn, setLogedIn] = useState(true)
-  let id = 1 // בנתיים
+const Nav2 = (props) => {
+  let id = 1 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
@@ -18,8 +17,11 @@ const Nav2 = () => {
           <Link to='/products' className='nav-link'>products</Link>
         </Nav>
         <Nav>
-          {logedIn?<Link to={'/MyAccount/'+id} className='nav-link'>My Account</Link>:<Link to='/Login' className='nav-link'>Login</Link> }
-          {logedIn?<Link to="/cart" className='nav-link'>Cart</Link>:<Link to="/Register" className='nav-link'>Register</Link> }
+          {props.loggedIn? <Link to={'/MyAccount/'+id} className='nav-link'>My Account</Link> 
+          :         <Link to='/Login' className='nav-link'>Login</Link> }
+          {props.loggedIn? <><Link to="/cart" className='nav-link'>Cart</Link>
+                      <Link to="/blabla" className='nav-link'>log out</Link></> : 
+                    <Link to="/Register" className='nav-link'>Register</Link> }
         </Nav>
         <Form className="d-flex">
             <Form.Control

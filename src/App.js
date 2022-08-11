@@ -14,12 +14,14 @@ import {
 } from "react-router-dom";
 import Products from './MainComponents/Products';
 import MyAccount from './MainComponents/MyAccount';
+import { useState } from 'react';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(true)
   return (
     <Router>
       <div className="App">
-        <Nav2></Nav2>
+        <Nav2 loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Nav2>
           <Switch>
             <Route exact path='/'>
               <HomePage></HomePage>

@@ -3,6 +3,11 @@ export function getProducts(){
         .then(response => response.json())
         .then(products => products)
 }
+export function getProductsWith1Img(){
+    return fetch('http://localhost:3100/api/products/img')
+        .then(response => response.json())
+        .then(products => products)
+}
 
 export function getProductById(id){
     return fetch('http://localhost:3100/api/products/'+id)
