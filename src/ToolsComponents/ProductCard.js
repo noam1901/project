@@ -1,4 +1,5 @@
 import React from "react";
+import './ProductCard.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {FaStar} from 'react-icons/fa'
@@ -12,11 +13,11 @@ function ProductCard(props){
       
         <Card.Title>{props.name}</Card.Title></a>
         <Card.Text>
-          {props.description}<br></br>{props.price}<br></br>{!(props.discount === 0)? 'DISCOUNT: '+props.discount + '%': <></>}
+          {props.description}<br></br>{props.price+'$'}<br></br>{!(props.discount === 0)? 'DISCOUNT: '+props.discount + '%': <></>}
         </Card.Text>
         <div className="card-btns">        
-        {props.inStock === 0?<Button variant="danger" disabled>Out Of stock</Button>:<><Button variant="success">Buy Now</Button></> }
-        <Button>Add to wishlist</Button>
+        {props.inStock === 0?<button variant="danger" disabled>Out Of stock</button>:<><button variant="success">Buy Now</button></> }
+        <button>Add to wishlist</button>
         <div>4<FaStar className="star"></FaStar></div>
       </div>
       </Card.Body>
