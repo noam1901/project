@@ -41,19 +41,12 @@ function SingleProduct(){
         <Form.Control type="number" placeholder="Enter Quantity" defaultValue={0} min="0" />
       </Form.Group>
     <Form.Group className="mb-3">
-    <Form.Label>color:</Form.Label>
-    <Form.Select>
-      <option>Choose color...</option>
-      <option>White</option>
-      <option>Black</option>
-      <option>Casspi</option>
-    </Form.Select>
   </Form.Group>
     </div>
     <div className='btns'>
-      <Button variant="success" className='btnItem'>Buy Now</Button>
-      <Button variant="warning" className='btnItem'>Add To Cart</Button>
-      <Button variant="light" className='btnItem'>Add To Wishlist</Button>
+      <button className='btnItem'>Buy Now</button>
+      <button  className='btnItem'>Add To Cart</button>
+      <button  className='btnItem'>Add To Wishlist</button>
     </div>
     
   </Card.Body>
