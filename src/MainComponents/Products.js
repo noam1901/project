@@ -10,6 +10,7 @@ const Products = () => {
         }
         getData()
     },[])
+    console.log(products);
     const categories = [{id:1,name:'category1'}, {id:2,name:'category2'}, {id:3,name:'category3'}, {id:4,name:'category4'}]
   return (
     <>
@@ -34,7 +35,7 @@ const Products = () => {
             <button>SORT</button>
         </div>
         <div className="products">
-            {products.map(product => <ProductCard key={product.productid} name={product.productName} description={product.Description.slice(0,10)+'...'} price={product.unitPrice} discount={product.discount==null?0:product.discount} inStock={product.unitInStock} img={product.imgURL} id={product.productid}></ProductCard>)}
+            {products.map(product => <ProductCard key={product.productid} name={product.productname} description={product.Description.slice(0,10)+'...'} price={product.unitprice} discount={product.discount} inStock={product.unitInStock} img={product.imgurl} id={product.productid} rating={product.rating}></ProductCard>)}
         </div>
      
     </div>
