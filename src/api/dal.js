@@ -14,6 +14,11 @@ export function getProductById(id){
         .then(response => response.json())
         .then(product => product)
 }
+export function getProductTopRating(id){
+    return fetch('http://localhost:3100/api/products/ratings')
+        .then(response => response.json())
+        .then(product => product)
+}
 export function getImagesByProductId(prodId){
     return fetch('http://localhost:3100/api/imgs/product'+prodId)
         .then(response => response.json())

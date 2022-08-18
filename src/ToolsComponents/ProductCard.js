@@ -12,12 +12,12 @@ function ProductCard(props){
       
         <Card.Title>{props.name}</Card.Title></a>
         <Card.Text>
-          {props.description}<br></br>{props.price+'$'}<br></br>{!(props.discount === 0)? 'DISCOUNT: '+props.discount + '%': <></>}
+          {props.description}<br></br>{props.price+'$'}<br></br>{!(props.discount === null)? 'DISCOUNT: '+props.discount + '%': <></>}
         </Card.Text>
         <div className="card-btns">        
         {props.inStock === 0?<button disabled>Out Of stock</button>:<><button>Buy Now</button></> }
         <button>Add to wishlist</button>
-        <div>4<FaStar className="star"></FaStar></div>
+        <div>{props.rating}<FaStar className="star"></FaStar></div>
       </div>
       </Card.Body>
     </Card>
