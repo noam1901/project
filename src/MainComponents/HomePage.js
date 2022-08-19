@@ -12,7 +12,6 @@ function HomePage(){
         
         getData()
     },[])
-    console.log(products);
     return (
     <div>
     <div>
