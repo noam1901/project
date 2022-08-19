@@ -20,20 +20,20 @@ const Cart = () => {
     }]
   return (
     <div className='cart'>
-        <div class='Header'>
+        <div className='Header'>
             <h3 className='Heading'>Shopping Cart</h3>
             <h5 className='Action'>Remove all</h5>
         </div>
         {orderDetails.map(order => <CartItem key={order.id} name={order.name} color={order.color} src={order.src} quantity={order.quantity} price={order.price} id={order.id}></CartItem>)}
-        <div class='checkout'>
-            <div class='total'>
+        <div className='checkout'>
+            <div className='total'>
                 <div>
-                    <div class='Subtotal'>Sub-Total</div>
-                    <div class='items'>2 items</div>
+                    <div className='Subtotal'>Sub-Total</div>
+                    <div className='items'>2 items</div>
                 </div>
-                <div class='total-amount'>$68.18</div>
+                <div className='total-amount'>$68.18</div>
             </div>
-            <button class='button'>Checkout</button>
+            <button className='button'>Checkout</button>
         </div>
     </div>
   )
