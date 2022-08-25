@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getProductTopRating } from "../api/dal";
-import ProductCard from "../ToolsComponents/ProductCard";
+import ProductCard from "../SeconderyComponents/ProductCard";
 import "./HomePage.css"
 
 function HomePage(){

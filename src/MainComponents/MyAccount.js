@@ -1,6 +1,6 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
-
+import MyDetails from '../SeconderyComponents/MyDetails.js'
 const MyAccount = () => {
     const {id} = useParams()
   return (
@@ -22,7 +22,7 @@ const MyAccount = () => {
         </div> 
     </div>
         <div>
-            {/* forms and function needed to change and show */}
+            {<MyDetails id={id}></MyDetails>/** nested route should select the position*/}
         </div>
     </div>
   )

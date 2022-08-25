@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import Input from "../ToolsComponents/Input";
+import Input from "../SeconderyComponents/Input";
 
 
 function Form(props){

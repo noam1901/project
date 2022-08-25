@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ProductCard from '../ToolsComponents/ProductCard'
+import ProductCard from '../SeconderyComponents/ProductCard'
 import { getProductsWith1Img } from '../api/dal.js'
 
 const Products = () => {
