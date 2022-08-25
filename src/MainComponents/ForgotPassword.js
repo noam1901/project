@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../ToolsComponents/Form'
+import Form from '../SeconderyComponents/Form'
 import {FaMailBulk} from 'react-icons/fa'
 
 

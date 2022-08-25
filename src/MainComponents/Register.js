@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import Form from "../ToolsComponents/Form";
+import Form from "../SeconderyComponents/Form";
 import {FaMailBulk, FaPaperclip, FaMarsDouble, FaPuzzlePiece} from 'react-icons/fa'
 
 function Register(){
