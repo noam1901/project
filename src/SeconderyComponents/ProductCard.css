@@ -2,7 +2,34 @@
     height: 2rem;
     font-size: x-small;
 } */
-.card-title {
+/* .card-title {
     text-decoration: none;
     color: black;
-}
+} */
+.cardProductImage {
+    height: 310px;
+    border-bottom: 1px solid black;
+  }
+  
+  .cardDiv {
+    padding: 0px;
+    margin: 30px 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+  
+  }
+  
+  .cardListTitle {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .heartIcon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .heartIcon:hover {
+    color: red;
+  }

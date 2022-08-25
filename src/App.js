@@ -1,7 +1,7 @@
 import './App.css';
-import Nav2 from './ToolsComponents/Nav2';
+import Nav2 from './SeconderyComponents/Nav2';
 import Login from './MainComponents/Login';
-import Footer from './ToolsComponents/Footer';
+import Footer from './SeconderyComponents/Footer';
 import Register from './MainComponents/Register';
 import HomePage from './MainComponents/HomePage';
 import SingleProduct from './MainComponents/SingleProduct';
@@ -17,7 +17,7 @@ import MyAccount from './MainComponents/MyAccount';
 import { useState } from 'react';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true)
+  const [loggedIn, setLoggedIn] = useState(false)
   return (
     <Router>
       <div className="App">
@@ -43,6 +43,7 @@ function App() {
             </Route>
             <Route path='/MyAccount/:id'>
               <MyAccount></MyAccount>
+              {/* change the use of id with cookies */}
             </Route>
           </Switch>
         <Footer></Footer>

@@ -1,5 +1,5 @@
 import React from 'react'
-import CartItem from '../ToolsComponents/CartItem'
+import CartItem from '../SeconderyComponents/CartItem'
 import "./Cart.css"
 
 const Cart = () => {
