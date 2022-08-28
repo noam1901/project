@@ -10,7 +10,7 @@ const Nav2 = (props) => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-      <Link to="/" >NoamShop</Link>
+      <Link to="/" ><img src='./logo.png' className='logo'></img></Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">

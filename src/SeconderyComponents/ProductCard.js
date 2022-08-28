@@ -8,9 +8,9 @@ function ProductCard(props){
     return (
       <div className='cardDiv col-sm-6 col-md-4 col-lg-3'>
       <Card className='h-100'>
-        <Card.Img className='cardProductImage' variant="top" src={"imgs/"+props.img+'.jpg'} />
+      <a href={'/SingleProduct/'+props.id} className='card-title'><Card.Img className='cardProductImage' variant="top" src={"imgs/"+props.img+'.jpg'} /></a>
         <Card.Body className='productCardFooter'>
-        <Card.Title className='cartListPrice'>15$</Card.Title>
+        <Card.Title className='cartListPrice'>{props.price}$ <span>{props.rating}<FaStar className="star"></FaStar></span></Card.Title>
           <Card.Title className='cardListTitle'>{props.name}</Card.Title>
           <ButtonGroup className='productButtons' aria-label="Basic example">
             <Button className='cardButtons' variant="secondary">Add To Cart</Button>
