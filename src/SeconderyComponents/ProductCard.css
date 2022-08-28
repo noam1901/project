@@ -13,11 +13,8 @@
   
   .cardDiv {
     padding: 0px;
-    margin: 30px 10px;
     width: 100%;
-    border: 1px solid black;
     border-radius: 6px;
-  
   }
   
   .cardListTitle {
@@ -29,7 +26,12 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    cursor: pointer;
   }
   .heartIcon:hover {
     color: red;
   }
+.cartListPrice {
+  display: flex;
+  justify-content: space-between;
+}

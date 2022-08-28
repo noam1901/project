@@ -219,3 +219,7 @@ button {
  button:active {
   transform: scale(0.9);
  }
+ .logo {
+  width: 8rem;
+  height: 3rem;
+ }
